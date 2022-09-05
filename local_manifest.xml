@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+ <!-- Trees -->
+ <project path="device/xiaomi/raphael" name="Evolution-X-Devices/device_xiaomi_raphael.git" remote="github" revision="tiramisu" />
+ <project path="vednor/xiaomi/raphael" name="Evolution-X-Devices/vendor_xiaomi_raphael.git" remote="github" revision="tiramisu" />
+ <project path="kernel/xiaomi/raphael" name="Evolution-X-Devices/kernel_xiaomi_raphael.git" remote="github" revision="tiramisu" />
+ 
+</manifest>
