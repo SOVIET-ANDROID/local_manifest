@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+ <!-- Remove HALs -->
+ <remove-project name="LineageOS/android_hardware_qcom_audio" />
+ <remove-project name="LineageOS/android_hardware_qcom_display" />
+ <remove-project name="LineageOS/android_hardware_qcom_media" />
+ 
+ <!-- Import my HALs -->
+  <project path="hardware/qcom-caf/sm8150/audio" name="SOVIET-ANDROID/platform_hardware_qcom_audio" groups="qcom,qcom_audio,pdk-qcom" revision="tiramisu" remote="github" />
+  <project path="hardware/qcom-caf/sm8150/display" name="SOVIET-ANDROID/platform_hardware_qcom_display" groups="pdk-qcom,qcom,qcom_display" revision="tiramisu" remote="github" />
+  <project path="hardware/qcom-caf/sm8150/media" name="SOVIET-ANDROID/platform_hardware_qcom_media" groups="qcom,pdk-qcom" revision="tiramisu" remote="github" />
+ 
  <!-- Trees -->
  <project path="device/xiaomi/raphael" name="Evolution-X-Devices/device_xiaomi_raphael.git" remote="github" revision="tiramisu" />
  <project path="vednor/xiaomi/raphael" name="Evolution-X-Devices/vendor_xiaomi_raphael.git" remote="github" revision="tiramisu" />
